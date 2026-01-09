@@ -1,0 +1,7 @@
+services:
+  backend:
+    image: fastapi-deploy:v1
+    container_name: fastapi_backend
+    ports:
+      - "8000:8000"
+    restart: always
