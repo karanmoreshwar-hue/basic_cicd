@@ -8,5 +8,5 @@ def home():
 
 @app.get("/health")
 def health():
-    return {"health": "broken"}
+    return {"health": "ok"}
 

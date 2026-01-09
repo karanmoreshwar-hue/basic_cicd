@@ -25,8 +25,5 @@ jobs:
           push: true
           tags: karanrajurkar7/fastapi-deploy:latest
 
-
-      - name: Deploy to Kubernetes
-        run: |
-          kubectl apply -f app/k8s/
-          kubectl rollout restart deployment fastapi-deployment 
+      # Note: Kubernetes deployment removed - configure kubectl with cluster credentials to enable
+      # Or deploy manually with: kubectl apply -f app/k8s/ && kubectl rollout restart deployment fastapi-deployment
